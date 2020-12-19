@@ -141,10 +141,41 @@ While analyzing algorithm using big-O, there are a few properties that will help
 
 #### Property 1(Coefficients):
 
-If f(n) is x * g(n) then f(n) is O(g(n)).This allow the coefficient (x) to be dropped.
+If `f(n)` is `x * g(n)` then `f(n)` is `O(g(n))`.This allow the coefficient (x) to be dropped.
 
 Example:
 
     f(n) = 100*g(n)
     then f(n) is O(n)
-###
+    
+#### Property 2(Sum):
+
+If `f1(n)` is `O(g(n))` and `f2(n)` is `O(g(n))` then `f1(n) + f2(n)` is `O(g(n))`
+
+This property is useful when an algorithm contains several loops of the same order.
+
+Example:
+
+    f1(n) is O(n)
+    f2(n) is O(n)
+    then f1(n) + f2(n) is O(n) + O(n), Which is O(n).
+    
+#### Property 3(Sum):
+
+If `f1(n)` is `O(g1(n))` and `f2(n)` is `O(g2(n))` then `f1(n) + f2(n)` is `O(max(g1(n),g2(n)))`. This property works because we are only concerned with the term of `highest growth rate`.
+
+Example:
+
+    f1(n) is O(n^2)
+    f2(n) is O(n)
+    so f1(n) + f2(n) = n^2 + n is O(n^2)
+    
+#### Property 4(Multiply):
+
+If `f1(n)` is `(g1(n))` and `f2(n)` is `O(g2(n))` then `f1(n) * f2(n)` is `O(g1(n)) * O(g2(n))`.This property is useful for analyzing segments of an algorithm with nested loops.
+
+Example:
+
+    f1(n) is O(n^2)
+    f2(n) is O(n)
+    then f1(n) * f2(n) is O(n^2) * O(n), Which is O(n^3)
