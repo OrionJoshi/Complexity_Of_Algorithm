@@ -130,3 +130,7 @@ Following works gives `O(N^2)` time complexity:
 
         return false;
     }
+
+#### O(log N)
+
+The best example of having this complexity is Binary Search algorithm.To read more about Binary Search algorithm [click here](https://en.wikipedia.org/wiki/Binary_search_algorithm).
