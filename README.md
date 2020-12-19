@@ -51,3 +51,6 @@ Sometime `Auxiliary Space` is confused with `Space Complexity`. But `Auxiliary S
 The main idea of asymptotic analysis is to have a measure of `efficiency of algorithms` that doesn’t depend on machine specific constants, and doesn’t require algorithms to be implemented and `time taken by programs to be compared`. Asymptotic notations are mathematical tools to represent time complexity of algorithms for asymptotic analysis. The following 3 asymptotic notations are mostly used to represent time complexity of algorithms.
 
 ####  Big O Notation:
+
+<img src="https://github.com/khageshwor/Complexity_Of_Algorithm/blob/main/img/BigO.png" width="700" height="500">
+
