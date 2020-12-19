@@ -54,3 +54,6 @@ The main idea of asymptotic analysis is to have a measure of `efficiency of algo
 
 <img src="https://github.com/khageshwor/Complexity_Of_Algorithm/blob/main/img/BigO.png" width="700" height="500">
 
+    O(g(n)) = { f(n): there exist positive constants c and 
+                  n0 such that 0 <= f(n) <= c*g(n) for 
+                  all n >= n0}
