@@ -134,3 +134,17 @@ Following works gives `O(N^2)` time complexity:
 #### O(log N)
 
 The best example of having this complexity is Binary Search algorithm.To read more about Binary Search algorithm [click here](https://en.wikipedia.org/wiki/Binary_search_algorithm).
+
+### Properties of Big-O Notation
+
+While analyzing algorithm using big-O, there are a few properties that will help to determine the upper bound of the running time of algorithm.
+
+#### Property 1(Coefficients):
+
+If f(n) is x * g(n) then f(n) is O(g(n)).This allow the coefficient (x) to be dropped.
+
+Example:
+
+    f(n) = 100*g(n)
+    then f(n) is O(n)
+###
