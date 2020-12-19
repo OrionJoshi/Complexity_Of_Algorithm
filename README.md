@@ -31,3 +31,17 @@ Time complexity is a measure of the amount of time required to execute an algori
 - The programming language chosen to implement the algorithm.
 - The quality of the complier.
 - The speed of the computer on which the algorithm to be executed.
+
+#### Space Complexity
+
+The space complexity of an algorithm or a computer program is the amount of memory space required to solve an instance of the computational problem as a function of characteristics of the input. It is the memory required by an algorithm to execute a program and produce output.
+
+Similar to time complexity, `space complexity` is often expressed asymptotically in big O notation,Whenever a solution to a problem is written some memory is required to complete. For any algorithm memory may be used for the following:
+
+- Variables (This include the constant values, temporary values).
+- Program Instruction.
+- Execution.
+
+Sometime `Auxiliary Space` is confused with `Space Complexity`. But `Auxiliary Space` is the extra space or the temporary space used by the algorithm during it's execution.
+
+    Space Complexity = Auxiliary Space + Input space
