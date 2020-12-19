@@ -57,3 +57,76 @@ The main idea of asymptotic analysis is to have a measure of `efficiency of algo
     O(g(n)) = { f(n): there exist positive constants c and 
                   n0 such that 0 <= f(n) <= c*g(n) for 
                   all n >= n0}
+
+below are some common orders of growth along with descriptions and examples where possible.
+
+#### O(1)
+
+O(1) describes an algorithm that will always execute in the same time (or space) regardless of the size of the input data set.Here are the examples of Algorithms/Group of Statements with Time complexity O(1):
+
+Following works gives `O(1)` time complexity:
+
+   - Accessing Array Index (arr[0]).
+   - Inserting a node in Linked List.
+   - Pushing and Poping on Stack.
+   - Insertion and Removal from Queue.
+   - Finding out the parent or left/right child of a node in a tree stored in Array.
+   - Jumping to Next/Previous element in Doubly Linked List.
+   
+    int IsFirstElementNull(IList<string> elements)
+    {
+        return elements[0];
+    }
+   
+#### O(N)
+
+`O(N)` describes an algorithm whose performance will grow linearly and in direct proportion to the size of the input data set.`All Brute Force Algorithms`,which require linearity, are based on O(n) time complexity.
+
+Following works gives `O(N)` time complexity:
+
+
+   - Traversing an array
+   - Traversing a linked list
+   - Linear Search
+   - Deletion of a specific element in a Linked List (Not sorted)
+   - Comparing two strings
+   - Checking for Palindrome
+   - Counting/Bucket Sort and here too you can find a million more such examples....
+
+    bool ContainsValue(IList<string> elements, string value)
+    {
+        foreach (var element in elements)
+        {
+            if (element == value) return true;
+        }
+
+        return false;
+    }
+    
+#### O(N^2)    
+
+O(N^2) represents an algorithm whose performance is directly proportional to the square of the size of the input data set. This is common with algorithms that involve nested iterations over the data set. Deeper nested iterations will result in O(N^3), O(N^4) etc.
+
+Following works gives `O(N^2)` time complexity:
+
+
+   - Bubble Sort
+   - Insertion Sort
+   - Selection Sort
+   - Traversing a simple 2D array
+
+    bool ContainsDuplicates(IList<string> elements)
+    {
+        for (var outer = 0; outer < elements.Count; outer++)
+        {
+            for (var inner = 0; inner < elements.Count; inner++)
+            {
+                
+                if (outer == inner) continue;
+
+                if (elements[outer] == elements[inner]) return true;
+            }
+        }
+
+        return false;
+    }
