@@ -190,3 +190,14 @@ For a given function g(n), we denote by Ω(g(n)) the set of functions.
     Ω (g(n)) = {f(n): there exist positive constants c and
                   n0 such that 0 <= c*g(n) <= f(n) for
                   all n >= n0}.
+
+#### Big Theta Notation:
+
+<img src="https://github.com/khageshwor/Complexity_Of_Algorithm/blob/main/img/theta.gif" width="700" height="500">
+
+For a given function g(n), we denote Θ(g(n)) is following set of functions.
+
+    Θ(g(n)) = {f(n): there exist positive constants c1, c2 and n0 such 
+                 that 0 <= c1*g(n) <= f(n) <= c2*g(n) for all n >= n0}
+                 
+The above definition means, if f(n) is theta of g(n), then the value f(n) is always between c1*g(n) and c2*g(n) for large values of n (n >= n0). The definition of theta also requires that f(n) must be non-negative for values of n greater than n0.
