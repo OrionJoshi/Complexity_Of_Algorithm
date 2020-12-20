@@ -201,3 +201,14 @@ For a given function g(n), we denote Θ(g(n)) is following set of functions.
                  that 0 <= c1*g(n) <= f(n) <= c2*g(n) for all n >= n0}
                  
 The above definition means, if f(n) is theta of g(n), then the value f(n) is always between c1*g(n) and c2*g(n) for large values of n (n >= n0). The definition of theta also requires that f(n) must be non-negative for values of n greater than n0.
+
+
+### If you want to read more, feel free to check these links:
+
+![https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)
+
+![https://www.geeksforgeeks.org/analysis-of-algorithms-set-3asymptotic-notations/](https://www.geeksforgeeks.org/analysis-of-algorithms-set-3asymptotic-notations/)
+
+![https://en.wikipedia.org/wiki/Big_O_notation](https://en.wikipedia.org/wiki/Big_O_notation)
+
+![https://medium.com/@mntknwr/what-is-asymptotic-notation-types-of-asymptotic-notations-9be3e0e5a2ab](https://medium.com/@mntknwr/what-is-asymptotic-notation-types-of-asymptotic-notations-9be3e0e5a2ab)
