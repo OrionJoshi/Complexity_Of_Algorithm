@@ -179,3 +179,14 @@ Example:
     f1(n) is O(n^2)
     f2(n) is O(n)
     then f1(n) * f2(n) is O(n^2) * O(n), Which is O(n^3)
+
+
+#### Big Omega Notation:
+
+<img src="https://github.com/khageshwor/Complexity_Of_Algorithm/blob/main/img/omega.gif" width="700" height="500">
+
+For a given function g(n), we denote by Ω(g(n)) the set of functions.
+
+    Ω (g(n)) = {f(n): there exist positive constants c and
+                  n0 such that 0 <= c*g(n) <= f(n) for
+                  all n >= n0}.
